@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,400,700|Oswald:300,400,500');
+
+.pop-text {
+  background-color: rgba(255, 255, 255, 0.459);
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 150px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.nav {
+  font-family: Nunito;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
+#home {
+  background-image: url(../assets/home.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  height: 800px;
+
+
+}
+
+footer {
+  font-size: .6em;
+  text-align: center;
+  padding: 2%;
+}
+
+body {
+  background-image: url(../assets/bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.quiz-holder {
+  background-color: #fff;
+  padding: 2%;
+}
+
+h2 {
+  font-family: Oswald;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: Oswald;
+  font-size: 1.4em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+
+}
+
+h4 {
+  font-family: Nunito;
+  font-size: 1em;
+  letter-spacing: .1em;
+  font-weight: 400;
+
+}
+
+
+
+.jhome {
+  background-color: #fff;
+  padding: 20px;
+
+}
+
+.holder {
+  margin: 20px;
+}
+
+.gallery {
+  max-width: 140px;
+  float: left;
+  height: 60;
+  padding: 4px;
+}
+
+a {
+  color: #a2b1aa;
+
+}
+
+a:hover {
+  color: #67726d;
+  text-decoration: none;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+div .chosen-container {
+  font-family: Nunito;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+
+
+.chosen-drop ul li {
+  font-family: Nunito;
+  font-size: .8em;
+  font-weight: 700;
+
+}
+
+button {
+  font-family: Oswald;
+  font-size: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #a2b1aa
+}
+
+button:hover {
+  color: #67726d;
+}
+
+/* gallery */
+
+@media (min-width: 768px) {
+
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active+.carousel-item,
+  .carousel-inner .active+.carousel-item+.carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+    transition: none;
+    margin-right: initial;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left+.carousel-item,
+  .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+  .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right+.carousel-item,
+  .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+  .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+
+}
